@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xuno - Send Money to Nepal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Promo Banner -->
+    <div class="promo-banner">
+        <div class="promo-overlay">
+            <!-- Diagonal Stripes Background -->
+            <div class="diagonal-stripes"></div>
+
+            <!-- Left Pillar Decoration -->
+            <div class="pillar-decoration pillar-left"></div>
+
+            <!-- Right Pillar Decoration -->
+            <div class="pillar-decoration pillar-right"></div>
+
+            <!-- NEW CUSTOMER OFFER Badge -->
+            <div class="new-customer-badge">
+                <span class="badge-text">NEW</span>
+                <span class="badge-text">CUSTOMER</span>
+                <span class="badge-text">OFFER</span>
+            </div>
+
+            <div class="promo-inner-wrapper">
+                <div class="promo-text-content">
+                    <p class="promo-main-text">
+                        Get <span class="highlight-yellow bold-large">50 paisa</span> <span class="bold-large">more</span><br class="mobile-break"> than <span class="highlight-yellow bold-large">Mid-Market Rates</span>
+                    </p>
+                    <p class="promo-rate-text">
+                        <span class="bold-text">1 USD = </span>
+                        <span class="old-rate">142.08</span>
+                        <span class="bold-text"> <span class="highlight-yellow bold-text">142.58</span> NPR </span>
+                        <br class="mobile-break">
+                        <span class="highlight-yellow bold-text">@ ZERO FEES</span>
+                    </p>
+                    <p class="promo-small-text">
+                        Applicable on your first transfer up to $2,000.00 - <br class="mobile-break"> Delivered within 24 hours - Limited Time Offer*
+                    </p>
+                    <a href="#" class="btn-send-now">Send Now</a>
+                </div>
+            </div>
+
+            <button class="promo-close-btn" aria-label="Close promo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 6 6 18"></path>
+                    <path d="m6 6 12 12"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <!-- Mobile Menu Checkbox -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="/" class="logo-link">
+                    <img src="images/xunoLogo.webp" alt="Xuno Logo" class="logo-img">
+                </a>
+
+                <div class="nav-menu">
+                    <a href="#" class="nav-link active">Personal</a>
+                    <a href="#" class="nav-link">Business</a>
+
+                    <div class="nav-dropdown">
+                        <button class="nav-link dropdown-btn">
+                            Features
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.6925 7.25986V11.9807C17.6925 14.8041 16.0792 16.014 13.6592 16.014H5.60169C5.18919 16.014 4.79502 15.9774 4.42836 15.8949C4.19919 15.8582 3.9792 15.7941 3.77753 15.7207C2.40253 15.2074 1.56836 14.0157 1.56836 11.9807V7.25986C1.56836 4.43653 3.18169 3.22656 5.60169 3.22656H13.6592C15.7125 3.22656 17.1884 4.09739 17.5825 6.08656C17.6467 6.45322 17.6925 6.82903 17.6925 7.25986Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M20.4439 10.0092V14.7301C20.4439 17.5534 18.8305 18.7634 16.4105 18.7634H8.35302C7.67469 18.7634 7.06053 18.6718 6.52886 18.4701C5.43803 18.0668 4.69552 17.2326 4.42969 15.8943C4.79635 15.9768 5.19052 16.0134 5.60302 16.0134H13.6605C16.0805 16.0134 17.6939 14.8034 17.6939 11.9801V7.25924C17.6939 6.82841 17.6572 6.44344 17.5839 6.08594C19.3255 6.4526 20.4439 7.68091 20.4439 10.0092Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M9.62509 12.0432C10.9616 12.0432 12.0451 10.9597 12.0451 9.62314C12.0451 8.28661 10.9616 7.20312 9.62509 7.20312C8.28856 7.20312 7.20508 8.28661 7.20508 9.62314C7.20508 10.9597 8.28856 12.0432 9.62509 12.0432Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M4.38281 7.60938V11.6427" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M14.8711 7.60938V11.6427" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                Diaspora Wealth Creation
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.70898 12.6029C8.70898 13.4921 9.3965 14.2071 10.2398 14.2071H11.9631C12.6965 14.2071 13.2923 13.5837 13.2923 12.8046C13.2923 11.9704 12.9257 11.6679 12.3848 11.4754L9.62565 10.5129C9.08482 10.3204 8.71816 10.0271 8.71816 9.18375C8.71816 8.41375 9.31398 7.78125 10.0473 7.78125H11.7706C12.614 7.78125 13.3015 8.49625 13.3015 9.38542" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M11 6.875V15.125" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M20.1673 10.9987C20.1673 16.0587 16.0607 20.1654 11.0007 20.1654C5.94065 20.1654 1.83398 16.0587 1.83398 10.9987C1.83398 5.9387 5.94065 1.83203 11.0007 1.83203" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M20.1667 5.4987V1.83203H16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M15.584 6.41536L20.1673 1.83203" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                Large Value Transfer
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="nav-link">About Us</a>
+                    <a href="#" class="nav-link">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="nav-right">
+                <div class="auth-buttons">
+                    <button class="btn-login">Login</button>
+                    <button class="btn-register">Register</button>
+                </div>
+
+                <!-- Mobile Menu Toggle Label -->
+                <label for="menu-toggle" class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-wrapper">
+            <!-- Hero Header -->
+            <div class="hero-header">
+                <span class="nepal-badge">
+                    Send Money To Nepal
+                    <span class="nepal-flag-icon">🇳🇵</span>
+                </span>
+                <h1 class="hero-main-title">Say Goodbye 👋 to Confusing Exchange Rates and Hidden Fees.</h1>
+            </div>
+
+            <!-- Exchange Section -->
+            <div class="exchange-section">
+                <div class="mmr-info-box">
+                    <span class="mmr-badge-orange">MMR (Mid-Market Rate)</span>
+                    <div class="mmr-tooltip-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <path d="M12 17h.01"></path>
+                        </svg>
+                        <div class="mmr-tooltip-content">
+                            <strong>MMR</strong> is the global currency exchange rate used as a benchmark in international markets. <a href="#">Learn more</a>
+                        </div>
+                    </div>
+                    <img src="images/curlArrow.webp" alt="" class="curl-decoration-small">
+                </div>
+
+                <div class="rate-display-card">
+                    <span class="rate-number">1 USD = 142.08 NPR</span>
+                </div>
+
+                <p class="last-updated">Last Updated at: 11/01/2025 01:49 PM</p>
+            </div>
+
+            <!-- Send Input Section -->
+            <div class="send-input-section">
+                <div class="amount-input-card">
+                    <div class="input-wrapper">
+                        <label for="usd-input">You're Sending</label>
+                        <input type="text" id="usd-input" value="1,000.00">
+                    </div>
+                    <div class="currency-display">
+                        <div class="flag-circle">🇺🇸</div>
+                        <span class="currency-code">USD</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comparison Tool -->
+            <div class="comparison-tool">
+                <div class="comparison-container">
+                    <h2 class="comparison-title">Real Rates. <span class="highlight-green">Real Savings.</span> Every time.</h2>
+
+                    <!-- Header Row (Desktop) -->
+                    <div class="comparison-header">
+                        <div></div>
+                        <div>Rate You Are Sold</div>
+                        <div>Fee</div>
+                        <div>Total Amount Received</div>
+                    </div>
+
+                    <!-- Comparison Rows -->
+                    <div class="comparison-rows">
+                        <!-- Xuno Featured Row (New Customer Offer) -->
+                        <div class="comparison-row featured">
+                            <div class="provider-col">
+                                <span class="limit-text">Limit: $2,000.00/txn</span>
+                                <span class="badge badge-green">New Customer Offer</span>
+                                <img src="images/xunoLogo.webp" alt="Xuno" class="provider-logo">
+                                <span class="delivery-time">(Same day)</span>
+                            </div>
+
+                            <div class="rate-col">
+                                <div class="curl-badge">
+                                    <span class="offer-label">New Customer Offer</span>
+                                    <img src="images/curlArrow.webp" alt="" class="curl-small">
+                                </div>
+                                <p class="rate-value">142.58</p>
+                                <div class="rate-desc">Mid Market Rate <strong>+ 50 paisa</strong> ⭐</div>
+                            </div>
+
+                            <div class="fee-col">
+                                <p class="fee-old">$8.50</p>
+                                <p class="fee-new">$0.00</p>
+                            </div>
+
+                            <div class="amount-col">
+                                <div class="calc-breakdown">
+                                    <div class="calc-row">
+                                        <span>$1,000.00</span>
+                                        <span>Send Amount</span>
+                                    </div>
+                                    <div class="calc-row">
+                                        <span>x 142.58</span>
+                                        <span class="real-rate-badge">Real Rate</span>
+                                    </div>
+                                    <hr>
+                                    <div class="calc-row total">
+                                        <span class="total-amount">1,42,580.00</span>
+                                        <span>Recipient Gets</span>
+                                    </div>
+                                    <button class="btn-send-money">Send Money</button>
+                                </div>
+                                <div class="mobile-total">
+                                    <span>1,42,580.00</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m6 9 6 6 6-6"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Xuno Best Deal -->
+                        <div class="comparison-row">
+                            <div class="provider-col">
+                                <span class="badge badge-green">Best Deal</span>
+                                <img src="images/xunoLogo.webp" alt="Xuno" class="provider-logo">
+                                <span class="delivery-time">(6 Business Days)</span>
+                            </div>
+
+                            <div class="rate-col">
+                                <p class="rate-value">141.56</p>
+                                <a href="#" class="bank-rate">Bank Rate</a> ⭐
+                            </div>
+
+                            <div class="fee-col">
+                                <p class="fee-new">$0.00</p>
+                            </div>
+
+                            <div class="amount-col">
+                                <div class="calc-breakdown">
+                                    <div class="calc-row">
+                                        <span>$1,000.00</span>
+                                        <span>Send Amount</span>
+                                    </div>
+                                    <div class="calc-row">
+                                        <span>x 141.56</span>
+                                        <span class="real-rate-badge">Real Rate</span>
+                                    </div>
+                                    <hr>
+                                    <div class="calc-row total">
+                                        <span class="total-amount">1,41,560.00</span>
+                                        <span>Recipient Gets</span>
+                                    </div>
+                                </div>
+                                <div class="mobile-total">
+                                    <span>1,41,560.00</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m6 9 6 6 6-6"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Xuno Same Day -->
+                        <div class="comparison-row">
+                            <div class="provider-col">
+                                <span class="badge badge-green">Same day</span>
+                                <img src="images/xunoLogo.webp" alt="Xuno" class="provider-logo">
+                                <span class="delivery-time">(Same day)</span>
+                            </div>
+
+                            <div class="rate-col">
+                                <p class="rate-value">142.08</p>
+                                <div class="rate-desc">Mid Market Rate ⭐</div>
+                            </div>
+
+                            <div class="fee-col">
+                                <p class="fee-new">$8.50</p>
+                            </div>
+
+                            <div class="amount-col">
+                                <div class="calc-breakdown">
+                                    <div class="calc-row">
+                                        <span>$1,000.00</span>
+                                        <span>Send Amount</span>
+                                    </div>
+                                    <div class="calc-row">
+                                        <span>x 140.87</span>
+                                        <span class="real-rate-badge">Real Rate</span>
+                                    </div>
+                                    <hr>
+                                    <div class="calc-row total">
+                                        <span class="total-amount">1,40,872.32</span>
+                                        <span>Recipient Gets</span>
+                                    </div>
+                                    <p class="loss-amount">-687.68 NPR</p>
+                                </div>
+                                <div class="mobile-total">
+                                    <div>
+                                        <span>1,40,872.32</span>
+                                        <p class="loss-mobile">-687.68 NPR</p>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m6 9 6 6 6-6"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Xuno Instant -->
+                        <div class="comparison-row">
+                            <div class="provider-col">
+                                <span class="limit-text">Limit: $1,000.00/txn</span>
+                                <span class="badge badge-green">Instant</span>
+                                <img src="images/xunoLogo.webp" alt="Xuno" class="provider-logo">
+                                <span class="delivery-time">(Within Seconds)</span>
+                            </div>
+
+                            <div class="rate-col">
+                                <p class="rate-value">142.08</p>
+                                <div class="rate-desc">Mid Market Rate</div>
+                            </div>
+
+                            <div class="fee-col">
+                                <p class="fee-new">$9.00</p>
+                                <p class="fee-percentage">0.9000%</p>
+                            </div>
+
+                            <div class="amount-col">
+                                <div class="calc-breakdown">
+                                    <div class="calc-row">
+                                        <span>$1,000.00</span>
+                                        <span>Send Amount</span>
+                                    </div>
+                                    <div class="calc-row">
+                                        <span>x 140.80</span>
+                                        <span class="real-rate-badge">Real Rate</span>
+                                    </div>
+                                    <hr>
+                                    <div class="calc-row total">
+                                        <span class="total-amount">1,40,801.28</span>
+                                        <span>Recipient Gets</span>
+                                    </div>
+                                    <p class="loss-amount">-908.72 NPR / -6.40 USD</p>
+                                </div>
+                                <div class="mobile-total">
+                                    <div>
+                                        <span>1,40,801.28</span>
+                                        <p class="loss-mobile">-908.72 NPR</p>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m6 9 6 6 6-6"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Competitors -->
+                        <!-- Remitly -->
+                        <div class="comparison-row">
+                            <div class="provider-col">
+                                <img src="images/remitly.e9da6a9c.svg" alt="Remitly" class="competitor-logo">
+                            </div>
+
+                            <div class="rate-col">
+                                <p class="rate-value">140.63</p>
+                            </div>
+
+                            <div class="fee-col">
+                                <p class="fee-new">$0.00</p>
+                            </div>
+
+                            <div class="amount-col">
+                                <div class="calc-breakdown">
+                                    <div class="calc-row">
+                                        <span>$1,000.00</span>
+                                        <span>Send Amount</span>
+                                    </div>
+                                    <div class="calc-row">
+                                        <span>x 140.63</span>
+                                        <span class="real-rate-badge">Real Rate</span>
+                                    </div>
+                                    <hr>
+                                    <div class="calc-row total">
+                                        <span class="total-amount">1,40,630.00</span>
+                                        <span>Recipient Gets</span>
+                                    </div>
+                                    <p class="loss-amount">-930.00 NPR</p>
+                                </div>
+                                <div class="mobile-total">
+                                    <div>
+                                        <span>1,40,630.00</span>
+                                        <p class="loss-mobile">-930.00 NPR</p>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m6 9 6 6 6-6"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Wise -->
+                        <div class="comparison-row">
+                            <div class="provider-col">
+                                <img src="images/wise.webp" alt="Wise" class="competitor-logo">
+                            </div>
+
+                            <div class="rate-col">
+                                <p class="rate-value">142.03</p>
+                            </div>
+
+                            <div class="fee-col">
+                                <p class="fee-new">$10.22</p>
+                            </div>
+
+                            <div class="amount-col">
+                                <div class="calc-breakdown">
+                                    <div class="calc-row">
+                                        <span>$1,000.00</span>
+                                        <span>Send Amount</span>
+                                    </div>
+                                    <div class="calc-row">
+                                        <span>x 140.58</span>
+                                        <span class="real-rate-badge">Real Rate</span>
+                                    </div>
+                                    <hr>
+                                    <div class="calc-row total">
+                                        <span class="total-amount">1,40,578.45</span>
+                                        <span>Recipient Gets</span>
+                                    </div>
+                                    <p class="loss-amount">-981.55 NPR</p>
+                                </div>
+                                <div class="mobile-total">
+                                    <div>
+                                        <span>1,40,578.45</span>
+                                        <p class="loss-mobile">-981.55 NPR</p>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m6 9 6 6 6-6"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Western Union -->
+                        <div class="comparison-row">
+                            <div class="provider-col">
+                                <img src="images/wu.webp" alt="Western Union" class="competitor-logo">
+                            </div>
+
+                            <div class="rate-col">
+                                <p class="rate-value">140.58</p>
+                            </div>
+
+                            <div class="fee-col">
+                                <p class="fee-new">$0.00</p>
+                            </div>
+
+                            <div class="amount-col">
+                                <div class="calc-breakdown">
+                                    <div class="calc-row">
+                                        <span>$1,000.00</span>
+                                        <span>Send Amount</span>
+                                    </div>
+                                    <div class="calc-row">
+                                        <span>x 140.58</span>
+                                        <span class="real-rate-badge">Real Rate</span>
+                                    </div>
+                                    <hr>
+                                    <div class="calc-row total">
+                                        <span class="total-amount">1,40,576.30</span>
+                                        <span>Recipient Gets</span>
+                                    </div>
+                                    <p class="loss-amount">-983.70 NPR</p>
+                                </div>
+                                <div class="mobile-total">
+                                    <div>
+                                        <span>1,40,576.30</span>
+                                        <p class="loss-mobile">-983.70 NPR</p>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m6 9 6 6 6-6"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TapTap Send -->
+                        <div class="comparison-row">
+                            <div class="provider-col">
+                                <img src="images/taptap-send.webp" alt="TapTap Send" class="competitor-logo">
+                            </div>
+
+                            <div class="rate-col">
+                                <p class="rate-value">140.00</p>
+                            </div>
+
+                            <div class="fee-col">
+                                <p class="fee-new">$0.00</p>
+                            </div>
+
+                            <div class="amount-col">
+                                <div class="calc-breakdown">
+                                    <div class="calc-row">
+                                        <span>$1,000.00</span>
+                                        <span>Send Amount</span>
+                                    </div>
+                                    <div class="calc-row">
+                                        <span>x 140.00</span>
+                                        <span class="real-rate-badge">Real Rate</span>
+                                    </div>
+                                    <hr>
+                                    <div class="calc-row total">
+                                        <span class="total-amount">1,40,000.00</span>
+                                        <span>Recipient Gets</span>
+                                    </div>
+                                    <p class="loss-amount">-1,560.00 NPR</p>
+                                </div>
+                                <div class="mobile-total">
+                                    <div>
+                                        <span>1,40,000.00</span>
+                                        <p class="loss-mobile">-1,560.00 NPR</p>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m6 9 6 6 6-6"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SWIFT Wire Transfer -->
+                        <div class="comparison-row">
+                            <div class="provider-col">
+                                <div class="swift-text">
+                                    <p>SWIFT</p>
+                                    <p>Wire Transfer</p>
+                                </div>
+                            </div>
+
+                            <div class="rate-col">
+                                <p class="rate-value">141.56</p>
+                            </div>
+
+                            <div class="fee-col">
+                                <p class="fee-new">$100.00</p>
+                            </div>
+
+                            <div class="amount-col">
+                                <div class="calc-breakdown">
+                                    <div class="calc-row">
+                                        <span>$1,000.00</span>
+                                        <span>Send Amount</span>
+                                    </div>
+                                    <div class="calc-row">
+                                        <span>x 127.40</span>
+                                        <span class="real-rate-badge">Real Rate</span>
+                                    </div>
+                                    <hr>
+                                    <div class="calc-row total">
+                                        <span class="total-amount">1,27,404.00</span>
+                                        <span>Recipient Gets</span>
+                                    </div>
+                                    <p class="loss-amount">-14,156.00 NPR</p>
+                                </div>
+                                <div class="mobile-total">
+                                    <div>
+                                        <span>1,27,404.00</span>
+                                        <p class="loss-mobile">-14,156.00 NPR</p>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m6 9 6 6 6-6"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diaspora Wealth Section -->
+    <section class="diaspora-section">
+        <div class="diaspora-container">
+            <article class="diaspora-article">
+                <div class="diaspora-text-content">
+                    <h2 class="diaspora-heading">Turn your U.S. Dollar into high-return investments & low-interest loans.</h2>
+                    <p class="diaspora-description">Enjoy high returns on investments, borrow up to 90% against FDs and easily repatriate funds back to the U.S. *</p>
+                </div>
+
+                <div class="diaspora-buttons">
+                    <button class="btn-talk-team">
+                        <p class="btn-text">Talk to Our Team</p>
+                        <span class="btn-icon-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 7h10v10M7 17 17 7"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <a href="#" class="btn-learn-more">
+                        <span class="btn-learn-text">Learn More</span>
+                        <span class="btn-learn-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 7h10v10M7 17 17 7"></path>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="partnership-box">
+                    <div class="partnership-row">
+                        <div class="partnership-item">
+                            <span class="partnership-label">Brought to you by:</span>
+                            <img src="images/xunoLogo.webp" alt="Xuno logo" class="xuno-logo-partner">
+                        </div>
+                        <div class="partnership-item">
+                            <span class="partnership-label">In-Partnership with:</span>
+                            <span class="partner-bank-name">Siddhartha Bank</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="banking-tagline">Banking Beyond Borders</p>
+            </article>
+
+            <div class="diaspora-image-section">
+                <div class="diaspora-relative-container">
+                    <img src="images/diaspora-cover.webp" alt="Diaspora Image" class="diaspora-main-image">
+
+                    <!-- Card 1: You earned 4.5% interest -->
+                    <div class="bubble-card bubble-card-1">
+                        <svg class="bubble-svg" viewBox="0 0 182 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M153.073 0.257812C166.117 0.257812 176.691 10.8314 176.691 23.875V66.6133C176.691 69.6948 176.1 72.6379 175.026 75.3369V79.377L182 89.835C177.957 90.4534 169.219 90.794 163.13 87.9863C160.079 89.4245 156.67 90.2305 153.073 90.2305H24.0205C10.9769 90.2305 0.402466 79.6569 0.402344 66.6133V23.875C0.402464 10.8314 10.9769 0.257812 24.0205 0.257812H153.073Z" fill="#14353B"/>
+                        </svg>
+                        <div class="bubble-content">
+                            <div class="bubble-badge">💰 <span>You earned</span></div>
+                            <div class="bubble-value-row">
+                                <div class="bubble-value">4.5%</div>
+                                <div class="bubble-label">interest</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Get loan up to 90% -->
+                    <div class="bubble-card bubble-card-2">
+                        <svg class="bubble-svg" viewBox="0 0 178 143" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M147.575 0.472412C163.88 0.472412 177.097 13.6894 177.098 29.9939V108.927C177.098 125.231 163.88 138.449 147.575 138.449H30.3896C28.919 138.449 27.4735 138.339 26.0605 138.132C19.8652 143.381 8.80787 142.951 4.03516 142.074L10.3867 130.637C4.53437 125.243 0.867188 117.513 0.867188 108.927V29.9939C0.867353 13.6894 14.0851 0.472412 30.3896 0.472412H147.575Z" fill="white"/>
+                        </svg>
+                        <div class="bubble-content">
+                            <div class="bubble-badge bubble-badge-light">💰 <span>Get loan up to</span></div>
+                            <div class="bubble-value-dark">90%</div>
+                            <div class="bubble-label-dark">of Fixed Deposit</div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Thanks! -->
+                    <div class="bubble-card bubble-card-3">
+                        <svg class="bubble-svg" viewBox="0 0 128 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M98.2881 0.00720215C111.332 0.00720215 121.906 10.5817 121.906 23.6254V31.8451C121.906 32.1758 121.897 32.5049 121.884 32.8324V44.6088L127.691 55.0668C123.946 55.7547 115.362 56.0981 110.358 52.1469C106.826 54.2516 102.699 55.4623 98.2881 55.4623H24.2158C11.1722 55.4623 0.597733 44.8887 0.597656 31.8451V23.6254C0.597656 10.5817 11.1721 0.00720215 24.2158 0.00720215H98.2881Z" fill="#14353B"/>
+                        </svg>
+                        <div class="bubble-content bubble-content-center">
+                            <div class="bubble-thanks">Thanks!😊</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="features-container">
+            <div class="features-header">
+                <h2 class="features-main-title">More Value, More Control, Every time you send</h2>
+            </div>
+
+            <div class="features-content">
+                <!-- Top Row: 2 Cards -->
+                <div class="features-row-2">
+                    <!-- Card 1: Get More for Your Money -->
+                    <article class="feature-card card-with-bg-image">
+                        <div class="card-bg-image">
+                            <img src="images/banner-card.webp" alt="Get More for Your Money image">
+                        </div>
+                        <div class="card-content-bottom">
+                            <h3 class="card-title">Get More for Your Money</h3>
+                            <p class="card-description">Xuno offers competitive rates and lets you compare exchange rates before sending, so your money goes further every time.</p>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Send More With Ease -->
+                    <article class="feature-card card-gradient-yellow">
+                        <div class="card-content-center">
+                            <div class="card-image-container">
+                                <img src="images/card-2.webp" alt="Send More With Ease image">
+                            </div>
+                            <div class="card-text">
+                                <h3 class="card-title">Send More With Ease</h3>
+                                <p class="card-description">Unlock a powerful monthly sending limit of up to $75,000, giving you the flexibility you need!</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Bottom Row: 3 Cards -->
+                <div class="features-row-3">
+                    <!-- Card 3: Choose How Fast It Arrives -->
+                    <article class="feature-card card-gradient-blue">
+                        <div class="card-content-center">
+                            <div class="card-image-container">
+                                <img src="images/card-3.webp" alt="Choose How Fast It Arrives image">
+                            </div>
+                            <div class="card-text">
+                                <h3 class="card-title">Choose How Fast It Arrives</h3>
+                                <p class="card-description">Need it there now or happy to wait for a better deal? You decide the speed. It's your money, your timing.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4: Verify Before You Send -->
+                    <article class="feature-card card-gradient-purple">
+                        <div class="card-content-center">
+                            <div class="card-image-container">
+                                <img src="images/card-4.webp" alt="Verify Before You Send image">
+                            </div>
+                            <div class="card-text">
+                                <h3 class="card-title">Verify Before You Send</h3>
+                                <p class="card-description">We verify recipient bank details in real time to prevent account mismatches.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 5: Safe and Secure -->
+                    <article class="feature-card card-gradient-green">
+                        <div class="card-content-center">
+                            <div class="card-image-container">
+                                <img src="images/card-5.webp" alt="Safe and Secure image">
+                            </div>
+                            <div class="card-text">
+                                <h3 class="card-title">Safe and Secure</h3>
+                                <p class="card-description">Your money is protected with bank-level encryption and 2-Factor Authentication, every step of the way.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="testimonial-wrapper">
+            <div class="testimonial-header">
+                <h2 class="testimonial-title">See Why Our Customers Love</h2>
+                <img src="images/xunoLogo.webp" alt="Xuno Black Image" class="xuno-logo-testimonial">
+            </div>
+
+            <div class="carousel-section">
+                <div class="fade-overlay fade-left"></div>
+                <div class="fade-overlay fade-right"></div>
+
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <!-- Testimonial Card 1 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-author">
+                                    <span class="avatar avatar-peach">RP</span>
+                                    <div class="author-info">
+                                        <span class="author-name">Ram Prajapati</span>
+                                    </div>
+                                </div>
+                                <blockquote class="testimonial-quote">
+                                    <p>It is awesome service for us, thank you xuno.</p>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial Card 2 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-author">
+                                    <span class="avatar avatar-mauve">SP</span>
+                                    <div class="author-info">
+                                        <span class="author-name">Sabal Prasain</span>
+                                    </div>
+                                </div>
+                                <blockquote class="testimonial-quote">
+                                    <p>The app is intuitive and easy to use, with a clean interface and fast transactions.</p>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial Card 3 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-author">
+                                    <span class="avatar avatar-peach">PL</span>
+                                    <div class="author-info">
+                                        <span class="author-name">Pinki Lageju</span>
+                                    </div>
+                                </div>
+                                <blockquote class="testimonial-quote">
+                                    <p>The best way to send money home</p>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial Card 4 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-author">
+                                    <span class="avatar avatar-peach">PG</span>
+                                    <div class="author-info">
+                                        <span class="author-name">Prabha Gautam</span>
+                                    </div>
+                                </div>
+                                <blockquote class="testimonial-quote">
+                                    <p>Very convenient and excellent rates!</p>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial Card 5 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-author">
+                                    <span class="avatar avatar-green">DS</span>
+                                    <div class="author-info">
+                                        <span class="author-name">Diwanshu Shrestha</span>
+                                    </div>
+                                </div>
+                                <blockquote class="testimonial-quote">
+                                    <p>Awesome platform with great value. Love it! It's my go-to for sending money home.</p>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial Card 6 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-author">
+                                    <span class="avatar avatar-peach">SB</span>
+                                    <div class="author-info">
+                                        <span class="author-name">Shankhar khatri</span>
+                                    </div>
+                                </div>
+                                <blockquote class="testimonial-quote">
+                                    <p>The delivery is instant with great rate. Amazing!</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination Dots -->
+                <div class="carousel-pagination">
+                    <span class="pagination-dot"></span>
+                    <span class="pagination-dot"></span>
+                    <span class="pagination-dot active"></span>
+                    <span class="pagination-dot"></span>
+                    <span class="pagination-dot"></span>
+                    <span class="pagination-dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Logo and Description -->
+                <div class="footer-brand-section">
+                    <div class="brand-content">
+                        <img src="images/xunoLogo.webp" alt="Xuno Logo" class="footer-brand-logo">
+                        <p class="footer-description">Send money to Nepal with ease and confidence.</p>
+                        <p class="footer-description-detail">Get competitive exchange rates, low fees, and enhanced security features to keep your funds safe.</p>
+                    </div>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-column">
+                    <h2 class="footer-column-title">Company</h2>
+                    <ul class="footer-menu">
+                        <li><a href="#" class="footer-menu-link">Contact us</a></li>
+                        <li><a href="#" class="footer-menu-link">About us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="footer-column">
+                    <h2 class="footer-column-title">Resources</h2>
+                    <ul class="footer-menu">
+                        <li><a href="#" class="footer-menu-link">Blog</a></li>
+                        <li><a href="#" class="footer-menu-link">Business</a></li>
+                    </ul>
+                </div>
+
+                <!-- Socials -->
+                <div class="footer-column">
+                    <h2 class="footer-column-title">Socials</h2>
+                    <ul class="footer-menu">
+                        <li><a href="#" class="footer-menu-link">Facebook</a></li>
+                        <li><a href="#" class="footer-menu-link">Twitter</a></li>
+                        <li><a href="#" class="footer-menu-link">Instagram</a></li>
+                        <li><a href="#" class="footer-menu-link">LinkedIn</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legals -->
+                <div class="footer-column">
+                    <h2 class="footer-column-title">Legals</h2>
+                    <ul class="footer-menu">
+                        <li><a href="#" class="footer-menu-link">User Agreement</a></li>
+                        <li><a href="#" class="footer-menu-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-menu-link">Esign Agreement</a></li>
+                        <li><a href="#" class="footer-menu-link">Account Agreement Disclosure and Consent</a></li>
+                        <li><a href="#" class="footer-menu-link">Passport Account Agreement</a></li>
+                    </ul>
+                </div>
+
+                <!-- Download App -->
+                <div class="footer-column footer-download">
+                    <h2 class="footer-column-title">Download App</h2>
+                    <ul class="footer-menu">
+                        <li>
+                            <a href="#" class="app-badge-link">
+                                <img src="images/appStore.webp" alt="App Store" class="app-badge">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="app-badge-link">
+                                <img src="images/playStore.webp" alt="Play Store" class="app-badge">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Disclaimer -->
+            <div class="footer-legal">
+                <div class="legal-text">
+                    <div class="legal-paragraphs">
+                        <p>Involute Inc. d.b.a. Xuno partners with financial services software company Sila Inc. ("Sila") and Priority Technology Holdings Inc. ("Priority Commerce"), either directly or through its subsidiary Finxera, Inc. (NMLS #1168701) and/or its authorized affiliates, contractors and partners (including but not limited to the following Banks: Wells Fargo, N.A., Comerica Bank, Axos Bank, and Western Alliance Bank), to offer you electronic fund transfers and provide you with an account. Involute Inc. is a financial technology company, not a bank.</p>
+                        <p>All third-party names and logos are trademarks of their respective owners. These owners are not affiliated with Xuno and have not sponsored or endorsed Xuno's products or services.</p>
+                    </div>
+                    <p class="copyright">&copy; Involute Inc. 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
