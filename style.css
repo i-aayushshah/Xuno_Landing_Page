@@ -1265,7 +1265,7 @@ a {
 .bubble-svg {
     position: absolute;
     inset: 0;
-    width: 100%;
+    width: 120%;
     height: 100%;
 }
 
@@ -1283,8 +1283,8 @@ a {
     align-items: center;
     background: rgba(59, 130, 246, 0.2);
     color: white;
-    font-size: clamp(8px, 1vw, 12px);
-    padding: 4px 8px;
+    font-size: clamp(7px, 0.5vw, 12px);
+    padding: 0% 2px;
     border-radius: 20px;
     margin-bottom: 8px;
     width: fit-content;
@@ -1292,6 +1292,7 @@ a {
 
 .bubble-badge span {
     margin-left: 4px;
+
 }
 
 .bubble-badge-light {
@@ -1325,7 +1326,7 @@ a {
 }
 
 .bubble-label-dark {
-    font-size: clamp(10px, 1.5vw, 16px);
+    font-size: clamp(8px, 1.5vw, 16px);
     color: rgba(0, 0, 0, 0.7);
     margin-top: 4px;
 }
@@ -1338,7 +1339,7 @@ a {
 }
 
 .bubble-thanks {
-    font-size: clamp(10px, 2vw, 20px);
+    font-size: clamp(9px, 2vw, 20px);
     color: white;
 }
 
@@ -1402,22 +1403,34 @@ a {
         width: 160px;
         bottom: 8px;
         right: -2.5rem;
-        margin-bottom: 25rem;
+        margin-bottom: 15rem;
     }
 
     .bubble-card-2 {
         width: 160px;
         bottom: 8px;
-        right: 22.5rem;
-        margin-bottom: 13.2rem;
+        right: 12.5rem;
+        margin-bottom: 10.2rem;
     }
 
     .bubble-card-3 {
         width: 140px;
         bottom: 8px;
         right: -2.5rem;
-        margin-bottom: 8.4rem;
+        margin-bottom: 3.4rem;
     }
+    .bubble-svg {
+    width: 120%;
+
+}
+
+.bubble-content {
+    padding: 20px 25px;
+}
+.bubble-badge {
+    padding: 4px 8px;
+}
+
 }
 
 @media (min-width: 1024px) {
@@ -1601,7 +1614,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 12px;
-    margin-top: 8px;
+    margin-top: -12px;
 }
 
 .card-image-container {
@@ -1632,7 +1645,8 @@ a {
 
 .card-description {
     color: white;
-    font-size: clamp(0.75rem, 1.5vw, 1rem);
+    font-size: clamp(0.65rem, 1.5vw, 0.9rem);
+    font-weight: 300;
     line-height: 130%;
     letter-spacing: -0.02em;
     display: -webkit-box;
@@ -1818,7 +1832,7 @@ a {
 
 .testimonial-card {
     flex: 0 0 auto;
-    width: clamp(280px, 90vw, 365px);
+    width: 220px;
     scroll-snap-align: center;
     border: 1px solid rgba(229, 231, 235, 1);
     border-radius: 20px;
@@ -1926,8 +1940,11 @@ a {
 /* Tablet and Desktop */
 @media (min-width: 768px) {
     .testimonial-section {
-        padding: 80px 16px;
+        padding: 120px 16px;
     }
+    .testimonial-card {
+    width: clamp(280px, 20vw, 365px);
+}
 
     .fade-overlay {
         width: 300px;
@@ -1942,6 +1959,9 @@ a {
     .testimonial-quote p {
         font-size: 1.125rem;
     }
+        .testimonial-card {
+    width: clamp(280px, 90vw, 365px);
+}
 }
 
 /* ===================================
