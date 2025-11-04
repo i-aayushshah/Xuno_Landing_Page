@@ -71,6 +71,17 @@ a {
     min-height: 280px;
 }
 
+/* Offer banner image (replaces text badge) */
+.offer-banner-image {
+    position: absolute;
+    z-index: 30;
+    top: -16dvw;
+    left: -16.6667%;
+    width: 50%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
 /* Diagonal Stripes */
 .diagonal-stripes {
     position: absolute;
@@ -311,6 +322,11 @@ a {
         top: 40px;
         left: 30px;
         padding: 30px 60px;
+    }
+
+    .offer-banner-image {
+        object-fit: contain;
+        top: -18dvw;
     }
 }
 
@@ -1402,7 +1418,7 @@ a {
     .bubble-card-1 {
         width: 160px;
         bottom: 8px;
-        right: -4.5rem;
+        right: -4rem;
         margin-bottom: 15rem;
     }
 
@@ -1416,7 +1432,7 @@ a {
     .bubble-card-3 {
         width: 140px;
         bottom: 8px;
-        right: -4.5rem;
+        right: -4rem;
         margin-bottom: 3.4rem;
     }
     .bubble-svg {
@@ -1473,7 +1489,7 @@ a {
 
     .bubble-card-1 {
         width: 176px;
-        right: -3.5rem;
+        right: -3rem;
     }
 
     .bubble-card-2 {
@@ -1483,7 +1499,7 @@ a {
 
     .bubble-card-3 {
         width: 144px;
-        right: -3.5rem;
+        right: -3rem;
     }
 }
 
@@ -2155,7 +2171,26 @@ a {
     }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) {
+    .navbar {
+        padding: 16px 32px;
+    }
+
+    .logo-img {
+        width: 90px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .auth-buttons {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1024px) {
     .navbar {
         padding: 16px 32px;
     }
@@ -2171,9 +2206,8 @@ a {
     .auth-buttons {
         display: flex;
     }
+
 }
-
-
 @media (max-width: 768px) {
     .navbar {
         padding: 16px;
