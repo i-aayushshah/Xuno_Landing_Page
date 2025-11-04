@@ -1363,7 +1363,7 @@ a {
 .bubble-card-1 {
     width: clamp(102px, 15vw, 208px);
     bottom: -10rem;
-    right: -2.3rem;
+    right: -1.2rem;
     margin-bottom: 25rem;
     margin-right: 16px;
     animation: float 4s ease-in-out infinite;
@@ -1374,14 +1374,14 @@ a {
     bottom: -5rem;
     right: 12.4rem;
     margin-bottom: 13.2rem;
-    margin-right: 16px;
+    margin-right: 2px;
     animation: float 4s ease-in-out infinite 1.5s;
 }
 
 .bubble-card-3 {
     width: clamp(80px, 12vw, 176px);
     bottom: -4rem;
-    right: -2.3rem;
+    right: -1.2rem;
     margin-bottom: 8.4rem;
     margin-right: 16px;
     animation: float 4s ease-in-out infinite 3s;
@@ -1452,7 +1452,7 @@ a {
 @media (min-width: 1024px) {
     .diaspora-container {
         flex-direction: row;
-        gap: 240px;
+        gap: 200px;
     }
 
     .diaspora-heading {
